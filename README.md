@@ -1,41 +1,35 @@
-Banking Dashboard - Full-Stack Sample (React + Node.js + AWS-ready)
-==================================================================
+# Banking Dashboard
 
-Overview
---------
-This is a compact, recruiter-friendly sample project designed to showcase
-skills relevant to Capital One's New Grad Software Engineer role:
-  - Frontend: React (simple UI)
-  - Backend: Node.js + Express (REST API)
-  - Dev: Git, npm scripts, basic testing hints, CI/CD guidance (GitHub Actions)
-  - Cloud readiness: tips to deploy backend as AWS Lambda + API Gateway or EC2
+A full-stack **Banking Dashboard Demo** showcasing frontend + backend integration, built as part of a portfolio project.
 
-What you'll find
-----------------
-- backend/: Express app exposing /api/transactions endpoints (GET, POST)
-- frontend/: React app that calls the API and displays transactions
-- README files with run & deploy instructions
-- GitHub Actions sample workflow (CI skeleton) included in backend/.github
+## 🚀 Tech Stack
+- **Frontend**: Vanilla JS (React-ready), served with Express
+- **Backend**: Node.js + Express REST API
+- **Database**: In-memory store (demo-ready, can be upgraded to MongoDB/DynamoDB)
+- **CI/CD**: GitHub Actions (sample workflow included)
+- **Deployment**: Localhost, AWS-ready
 
-How to use
-----------
-1. Download and unzip Banking-Dashboard.zip
-2. Open two terminals:
-   - Terminal A: cd backend && npm install && npm run dev
-   - Terminal B: cd frontend && npm install && npm run dev
-3. Open the frontend URL (http://localhost:3000 or as printed) and test.
+## 📂 Features
+- View banking transactions
+- Add new transactions with date, description, and amount
+- Positive/negative transaction styling
+- REST API with `/api/transactions` and `/health` endpoints
+- Separate `frontend/` and `backend/` apps
 
-How to push to GitHub (example)
-------------------------------
-git init
-git add .
-git commit -m "Initial: Banking Dashboard sample"
-git branch -M main
-git remote add origin https://github.com/<your-username>/Banking-Dashboard.git
-git push -u origin main
+## ▶️ Running Locally
 
-Notes for recruiters
---------------------
-- This repository contains clear READMEs and a simple CI skeleton.
-- For production/cloud deployment, follow the instructions in backend/README.md
-- Consider adding tests, integration with DynamoDB or RDS, and converting backend into serverless functions (AWS Lambda) for extra match with job description.
+### 1. Backend
+```bash
+cd backend
+npm install
+npm run dev
+Backend runs on http://localhost:4000
+```
+### 2. Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+Frontend runs on http://localhost:3000
+```
+
